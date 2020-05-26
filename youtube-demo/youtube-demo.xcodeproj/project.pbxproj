@@ -14,6 +14,8 @@
 		9638E8D424799AD80088C68C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638E8D324799AD80088C68C /* Assets.xcassets */; };
 		9638E8D724799AD80088C68C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638E8D524799AD80088C68C /* LaunchScreen.storyboard */; };
 		96540E1E247DC41900531F5E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96540E1D247DC41900531F5E /* Constants.swift */; };
+		96540E20247DC6DE00531F5E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96540E1F247DC6DE00531F5E /* Video.swift */; };
+		96540E22247DC77A00531F5E /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96540E21247DC77A00531F5E /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9638E8D624799AD80088C68C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9638E8D824799AD80088C68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96540E1D247DC41900531F5E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		96540E1F247DC6DE00531F5E /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		96540E21247DC77A00531F5E /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				9638E8D524799AD80088C68C /* LaunchScreen.storyboard */,
 				9638E8D824799AD80088C68C /* Info.plist */,
 				96540E1D247DC41900531F5E /* Constants.swift */,
+				96540E1F247DC6DE00531F5E /* Video.swift */,
+				96540E21247DC77A00531F5E /* VideoModel.swift */,
 			);
 			path = "youtube-demo";
 			sourceTree = "<group>";
@@ -142,9 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9638E8CF24799AD70088C68C /* ViewController.swift in Sources */,
+				96540E22247DC77A00531F5E /* VideoModel.swift in Sources */,
 				9638E8CB24799AD70088C68C /* AppDelegate.swift in Sources */,
 				9638E8CD24799AD70088C68C /* SceneDelegate.swift in Sources */,
 				96540E1E247DC41900531F5E /* Constants.swift in Sources */,
+				96540E20247DC6DE00531F5E /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
