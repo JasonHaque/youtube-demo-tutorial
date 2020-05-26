@@ -9,14 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let  model = VideoModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        model.getVideos()
         
-        var test = "bitrise test"
-        
-        print(test)
     }
 
 
