@@ -31,9 +31,18 @@ class VideoModel{
                 return
             }
             
-            //parse response and create video objects
-            print("request successful")
-            print(data!)
+            do{
+                //parse response and create video objects
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+                let response = try decoder.decode(Response.self, from: data!)
+                dump(response)
+            }
+            catch{
+                
+            }
+            
         }
         
         // kick off data task
