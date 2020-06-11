@@ -8,23 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate ,ModelDelegate{
     
+    
+    //MARK: - IB outlets
+    
+    @IBOutlet weak var VideoTableView: UITableView!
     
     
     let  model = VideoModel()
     var videos = [Video]()
-
-    @IBOutlet weak var VideoTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        model.getVideos()
+        
+        
         
         VideoTableView.dataSource = self
         VideoTableView.delegate = self
         
+        model.delegate = self
+        model.getVideos()
+        
+    }
+    
+    //MARK: - model delegate methods
+    
+    func videosFetched(_ videos: [Video]) {
+        
+        self.videos = videos
+        
+        VideoTableView.reloadData()
     }
     
     // MARK:- Table View Methods
@@ -35,6 +50,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_CELL_ID, for: indexPath)
+        
+        cell.textLabel?.text = videos[indexPath.row].title
         
         return cell
     }
