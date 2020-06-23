@@ -20,6 +20,7 @@
 		96C288372499D59400787844 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C288362499D59400787844 /* VideoTableViewCell.swift */; };
 		96C2883E2499E25500787844 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2883D2499E25500787844 /* CacheManager.swift */; };
 		96DD745B24A284D2009E2080 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DD745A24A284D2009E2080 /* DetailViewController.swift */; };
+		96DD745E24A28D3D009E2080 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DD745D24A28D3D009E2080 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		96C288362499D59400787844 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		96C2883D2499E25500787844 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		96DD745A24A284D2009E2080 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96DD745D24A28D3D009E2080 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DD745E24A28D3D009E2080 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 			children = (
 				9638E8C924799AD70088C68C /* youtube-demo */,
 				9638E8C824799AD70088C68C /* Products */,
+				96DD745C24A28D3D009E2080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				9638E8D024799AD70088C68C /* Main.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		96DD745C24A28D3D009E2080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96DD745D24A28D3D009E2080 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
